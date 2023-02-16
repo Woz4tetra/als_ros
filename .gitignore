@@ -1,4 +1,5 @@
 # Build space
+.vscode/
 build
 build/*
 devel

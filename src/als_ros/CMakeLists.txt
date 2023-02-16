@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   tf
+  tf2_geometry_msgs
 )
 
 find_package(OpenCV REQUIRED)
@@ -70,4 +71,4 @@ add_executable(scan2pc src/scan2pc.cpp)
 target_link_libraries(scan2pc ${catkin_LIBRARIES})
 
 add_executable(slamer src/slamer.cpp)
-target_link_libraries(slamer ${catkin_LIBRARIES} ${OpenCV_LIBRARIES} ${YAMLCPP_LIBRARIES} ${PCL_LIBRARY_DIRS})
+target_link_libraries(slamer ${catkin_LIBRARIES} ${OpenCV_LIBRARIES} ${YAMLCPP_LIBRARIES} ${PCL_LIBRARIES})
